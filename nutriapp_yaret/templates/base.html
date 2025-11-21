@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}NutriApp Yaret{% endblock %}</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f2f7ff;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #87cefa;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: 35px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-top: 12px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1f2d3a;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="/">Inicio</a>
+    <a href="/registrar">Registro</a>
+    <a href="/entrar">Login</a>
+    <a href="/aprende">Aprende</a>
+    <a href="/platillos">Platillos</a>
+    <a href="/opciones">Opciones</a>
+    <a href="/balance">Balance</a>
+    <a href="/metapeso">Meta Peso</a>
+</nav>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

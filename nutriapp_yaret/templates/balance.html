@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Balance de Macros</h2>
+
+<form method="POST">
+    <input type="number" name="peso" placeholder="Peso (kg)">
+    <input type="number" name="altura" placeholder="Altura (cm)">
+    <input type="number" name="edad" placeholder="Edad">
+    <select name="sexo">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+    </select>
+    <button type="submit">Calcular</button>
+</form>
+
+{% if macros %}
+<p>Proteína: {{ macros.proteina }}g</p>
+<p>Carbohidratos: {{ macros.carbos }}g</p>
+<p>Grasas: {{ macros.grasas }}g</p>
+{% endif %}
+
+{% endblock %}

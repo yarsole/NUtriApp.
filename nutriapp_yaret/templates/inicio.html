@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Bienvenido a NutriApp </h1>
+<p>La API de Edamam proporciona acceso a una vasta base de datos de recetas, ingredientes y datos nutricionales, 
+    permitiendo analizar recetas, generar listas de compras y crear planes de comidas. Entre sus funciones clave 
+    se encuentra el análisis nutricional detallado de recetas y alimentos, filtrado de recetas por restricciones 
+    dietéticas, y la integración con herramientas de planificación y compra de alimentos. 
+</p>
+
+
+<div class="row mt-4">
+    <div class="col-md-6">
+    <div class="card">
+        <img src="{{ url_for('static', filename='img1.jpg') }}" class="card-img-top" alt="tomando agua">
+        <div class="card-body">
+            <h5 class="card-body">
+        </div>
+    </div>
+</div>
+            
+{% endblock %}

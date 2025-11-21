@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Peso Ideal</h2>
+
+<form method="POST">
+    <input type="number" name="altura" placeholder="Altura (cm)">
+    <button type="submit">Calcular Peso Ideal</button>
+</form>
+
+{% if pesoideal %}
+<p>Tu peso ideal es: {{ pesoideal }} kg</p>
+{% endif %}
+
+{% endblock %}
